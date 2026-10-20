@@ -70,7 +70,7 @@ span.hl { padding: 0 2px; margin: 0 -2px; }
 .paper b { font-weight: 700; }
 .paper .refs { margin-top: 2px; }
 .paper p { margin: 6px 0 0; }
-.compact .paper { padding: 8px 16px; }
+.venue em { font-weight: 700; }
 
 .cv {
   display: grid;
@@ -95,7 +95,7 @@ footer {
   main { padding-top: 32px; }
   .intro { flex-direction: column-reverse; gap: 20px; }
   .portrait { width: 160px; height: 160px; }
-  .paper, .compact .paper { padding-left: 10px; padding-right: 10px; }
+  .paper { padding-left: 10px; padding-right: 10px; }
   .cv { grid-template-columns: 1fr; gap: 0; }
   .cv dd { margin-bottom: 10px; }
   footer { text-align: left; }
