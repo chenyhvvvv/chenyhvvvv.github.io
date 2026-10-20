@@ -4,7 +4,6 @@
   --link: #1772d0;
   --link-hover: #f09228;
   --rule: #e5e5e5;
-  --highlight: #fffbe6;
 }
 
 * { box-sizing: border-box; }
@@ -59,9 +58,6 @@ h2 {
   font-weight: 400;
   margin: 0 0 12px;
 }
-
-.hl { background: var(--highlight); }
-span.hl { padding: 0 2px; margin: 0 -2px; }
 
 .papers { list-style: none; margin: 0; padding: 0; }
 .paper { padding: 14px 16px; }
