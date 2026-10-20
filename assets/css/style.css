@@ -60,7 +60,7 @@ h2 {
 }
 
 .papers { list-style: none; margin: 0; padding: 0; }
-.paper { padding: 14px 16px; }
+.paper { padding: 10px 0; }
 .paper .title { font-weight: 700; }
 .paper div { margin-top: 1px; }
 .paper b { font-weight: 700; }
@@ -91,7 +91,6 @@ footer {
   main { padding-top: 32px; }
   .intro { flex-direction: column-reverse; gap: 20px; }
   .portrait { width: 160px; height: 160px; }
-  .paper { padding-left: 10px; padding-right: 10px; }
   .cv { grid-template-columns: 1fr; gap: 0; }
   .cv dd { margin-bottom: 10px; }
   footer { text-align: left; }
