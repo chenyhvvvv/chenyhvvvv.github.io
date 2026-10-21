@@ -67,6 +67,7 @@ h2 {
 .paper .refs { margin-top: 2px; }
 .paper p { margin: 6px 0 0; }
 .venue em { font-weight: 700; }
+.note { margin-top: 8px; font-size: 13px; color: var(--muted); }
 
 .cv {
   display: grid;
