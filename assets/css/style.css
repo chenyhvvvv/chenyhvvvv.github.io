@@ -132,6 +132,23 @@ p { margin: 0 0 14px; }
 .cv dt { color: var(--muted); }
 .cv dd { margin: 0; }
 
+/* Teaching */
+.content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 24px 0 6px;
+}
+.courses { list-style: none; margin: 0; padding: 0; }
+.courses li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) auto;
+  gap: 4px 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.courses .code { font-weight: 700; }
+.courses .terms { color: var(--muted); text-align: right; }
+
 /* Publications */
 .papers { list-style: none; margin: 0; padding: 0; }
 .paper { padding: 12px 0; }
@@ -175,4 +192,6 @@ footer .container { padding-top: 18px; padding-bottom: 28px; }
   .masthead nav { gap: 18px; }
   .cv { grid-template-columns: 1fr; gap: 0; }
   .cv dd { margin-bottom: 10px; }
+  .courses li { grid-template-columns: 84px minmax(0, 1fr); }
+  .courses .terms { grid-column: 2; text-align: left; }
 }
