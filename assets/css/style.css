@@ -138,16 +138,14 @@ p { margin: 0 0 14px; }
   font-weight: 700;
   margin: 24px 0 6px;
 }
-.courses { list-style: none; margin: 0; padding: 0; }
-.courses li {
-  display: grid;
-  grid-template-columns: 96px minmax(0, 1fr) auto;
-  gap: 4px 16px;
-  padding: 8px 0;
+.courses { width: 100%; border-collapse: collapse; }
+.courses td {
+  padding: 8px 16px 8px 0;
   border-bottom: 1px solid #f1f1f1;
+  vertical-align: top;
 }
-.courses .code { font-weight: 700; }
-.courses .terms { color: var(--muted); text-align: right; }
+.courses .code { width: 112px; font-weight: 700; }
+.courses .terms { padding-right: 0; color: var(--muted); text-align: right; }
 
 /* Publications */
 .papers { list-style: none; margin: 0; padding: 0; }
@@ -192,6 +190,7 @@ footer .container { padding-top: 18px; padding-bottom: 28px; }
   .masthead nav { gap: 18px; }
   .cv { grid-template-columns: 1fr; gap: 0; }
   .cv dd { margin-bottom: 10px; }
-  .courses li { grid-template-columns: 84px minmax(0, 1fr); }
-  .courses .terms { grid-column: 2; text-align: left; }
+  .courses { table-layout: fixed; }
+  .courses .code { width: 100px; }
+  .courses .terms { width: 34%; text-align: left; }
 }
