@@ -138,6 +138,7 @@ p { margin: 0 0 14px; }
   font-weight: 700;
   margin: 24px 0 6px;
 }
+.content h2 + h3 { margin-top: 16px; }
 .courses { width: 100%; border-collapse: collapse; }
 .courses td {
   padding: 8px 16px 8px 0;
