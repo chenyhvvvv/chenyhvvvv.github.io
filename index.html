@@ -8,7 +8,7 @@
   <meta name="author" content="Yuheng Chen">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Yuheng Chen">
-  <meta property="og:description" content="PhD student in Data Science at HKUST, working on methods for spatial transcriptomics.">
+  <meta property="og:description" content="Yuheng Chen (陈宇恒), PhD student in Data Science at HKUST, working on statistical and machine-learning methods for spatial transcriptomics.">
   <meta property="og:url" content="https://chenyhvvvv.github.io/">
   <meta property="og:image" content="https://chenyhvvvv.github.io/assets/img/og.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -18,109 +18,71 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main>
-    <header class="intro">
-      <div class="intro-text">
-        <h1>Yuheng Chen <span lang="zh-Hans">陈宇恒</span></h1>
-        <p>
-          I am a PhD student in Data Science in the Department of Mathematics at
-          <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>,
-          advised by <a href="https://www.math.hkust.edu.hk/~macyang/">Prof. Can Yang</a>.
-          I received my BSc in Statistics from Sun Yat-sen University in 2023.
-        </p>
-        <p>
-          My research focuses on statistical and machine-learning methods for
-          spatial transcriptomics.
-        </p>
-        <p class="links">
-          <a href="mailto:ychenlp@connect.ust.hk">Email</a> /
-          <a href="https://scholar.google.com/citations?user=ngKH1ZgAAAAJ&amp;hl=en">Google Scholar</a> /
-          <a href="https://github.com/chenyhvvvv">GitHub</a>
-        </p>
-      </div>
-      <img class="portrait" src="assets/img/fur.jpg" width="800" height="800"
+  <header class="masthead">
+    <div class="container">
+      <a class="site-title" href="./">Yuheng Chen</a>
+      <nav aria-label="Main">
+        <a href="./" aria-current="page">About</a>
+        <a href="publications.html">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside class="sidebar">
+      <img class="avatar" src="assets/img/fur.jpg" width="800" height="800"
            alt="Close-up of cream and fawn fur on a wooden table">
-    </header>
-
-    <section>
-      <h2>Research</h2>
-      <p>
-        I am interested in spatial transcriptomics and spatial omics, cell
-        segmentation and cell-type annotation, probabilistic modeling and
-        optimal transport, and LLM agents for scientific data analysis.
-      </p>
-    </section>
-
-    <section>
-      <h2>Publications</h2>
-      <ul class="papers">
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.1038/s43588-026-01054-1">CellART: a unified framework for extracting single-cell information from high-resolution spatial transcriptomics</a>
-          <div><b>Yuheng Chen</b>, Yuyao Liu, Zhiwei Wang, Yeqin Zeng, Zitong Chao, Peiqi Jiang, Hao Chen, Jiguang Wang, Jiashun Xiao, Can Yang</div>
-          <div class="venue"><em>Nature Computational Science</em>, 2026</div>
-          <div class="refs"><a href="https://doi.org/10.1038/s43588-026-01054-1">paper</a> / <a href="https://github.com/chenyhvvvv/CellART">code</a></div>
-          <p>Combines stained tissue images, spatial transcriptomics and single-cell references to segment cells and annotate cell types jointly. Validated on Xenium, Visium HD, MERFISH and Stereo-seq.</p>
+      <div>
+        <h1>Yuheng Chen</h1>
+        <p class="cn" lang="zh-Hans">陈宇恒</p>
+        <p class="role">PhD Student in Data Science<br>The Hong Kong University of Science and Technology</p>
+      </div>
+      <ul class="profile-links">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <span>Hong Kong</span>
         </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.64898/2026.05.01.722244">STAT: A multi-agent framework for integrated and interactive spatial transcriptomics analysis</a>
-          <div><b>Yuheng Chen</b>, Shi Han, Zitong Chao, Yuyao Liu, Fan Zhang, Hao Chen, Jiguang Wang, Jiashun Xiao, Can Yang</div>
-          <div class="venue"><em>bioRxiv</em>, 2026</div>
-          <div class="refs"><a href="https://doi.org/10.64898/2026.05.01.722244">preprint</a> / <a href="https://github.com/chenyhvvvv/STAT-agent">code</a> / <a href="https://pypi.org/project/stat-agent/">PyPI</a> / <a href="https://statagent.online/">demo</a></div>
-          <p>A multi-agent system that plans, runs and explains spatial transcriptomics analyses from natural-language requests, alongside a shared tissue viewer. Benchmarked on 3 platforms and 11 categories of analysis tasks.</p>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2.5 10 12 4l9.5 6Z"/></svg>
+          <a href="https://www.math.hkust.edu.hk/">HKUST Mathematics</a>
         </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.64898/2026.09.09.750350">Accurate and scalable decontamination of imaging-based spatial transcriptomics via optimal transport</a>
-          <div><b>Yuheng Chen</b>*, Yuyao Liu*, Zitong Chao, Shi Han, Yeqin Zeng, Baichen Yu, Fan Zhang, Angela Ruohao Wu, Jiguang Wang, Hao Chen, Jiashun Xiao, Can Yang</div>
-          <div class="venue"><em>bioRxiv</em>, 2026</div>
-          <p>CellDot uses optimal transport to decide whether each molecule should be kept, reassigned to another cell or removed as background, correcting errors from segmentation and transcript spillover.</p>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>
+          <a href="mailto:ychenlp@connect.ust.hk">Email</a>
         </li>
-        <li class="paper">
-          <a class="title" href="https://arxiv.org/abs/2611.22838">Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation</a>
-          <div><b>Yuheng Chen</b>, Fan Zhang, Yixuan Xu, Chao Yang, Yang Xiang, Can Yang</div>
-          <div class="venue"><em>arXiv</em>:2611.22838, 2026</div>
-          <p>RL post-training makes generative recommenders more accurate at the top of the list but lowers the recall of the candidate list. A single extra loss term, out-of-rollout anchoring, keeps the top-of-list gain and restores recall.</p>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 9.5 12 4l9.5 5.5L12 15Z"/><path d="M6.5 12v4.5c1.5 1.6 3.4 2.5 5.5 2.5s4-.9 5.5-2.5V12"/></svg>
+          <a href="https://scholar.google.com/citations?user=ngKH1ZgAAAAJ&amp;hl=en">Google Scholar</a>
         </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.1038/s41467-026-78447-3">Mapping cell-type-specific spatial gene programs uncovers tissue architecture and microenvironment organization</a>
-          <div>Yeqin Zeng, Zhiwei Wang, Yuyao Liu, <b>Yuheng Chen</b>, Jiguang Wang, Hao Chen, Can Yang</div>
-          <div class="venue"><em>Nature Communications</em>, 2026</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.1101/2025.08.21.671426">NicheScope: Identifying Multicellular Niches and Niche-Regulated Cell States in Spatial Transcriptomics</a>
-          <div>Xinyi Yu, Xiaomeng Wan, Leqi Tian, <b>Yuheng Chen</b>, Yuyao Liu, Tianwei Yu, Can Yang, Jiashun Xiao</div>
-          <div class="venue"><em>Nature Cell Biology</em>, 2026 (in press)</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.64898/2026.10.12.758505">Hierarchical distribution matching enables comprehensive characterization of common and condition-specific cell niches in spatial omics data</a>
-          <div>Yuyao Liu, Jiashun Xiao, Xiaoheng Ma, Xiaomeng Wan, Peiqi Jiang, Zhiwei Wang, <b>Yuheng Chen</b>, Can Yang</div>
-          <div class="venue"><em>bioRxiv</em>, 2026</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://arxiv.org/abs/2610.03780">OceanMind: A multi-agent AI system for ocean diagnosis</a>
-          <div>Fan Zhang, Weicong Cheng, <b>Yuheng Chen</b>, Hiuseut Kung, Ying Zhang, Aixi Han, Quanjia Zhong, Can Yang, Jianping Gan</div>
-          <div class="venue"><em>arXiv</em>:2610.03780, 2026</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://www.researchsquare.com/article/rs-10838361/v1">Generative atlasing in universal gene expression space defines cell types and microenvironment spectra during disease progression</a>
-          <div>Xiaomeng Wan, Lei Yu, <b>Yuheng Chen</b>, Jiashun Xiao, Mu He, Can Yang, Angela Ruohao Wu</div>
-          <div class="venue"><em>Research Square</em>, 2026</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.1073/pnas.2503952122">A unified framework for identification of cell-type-specific spatially variable genes in spatial transcriptomic studies</a>
-          <div>Zhiwei Wang, Yeqin Zeng, Ziyue Tan, <b>Yuheng Chen</b>, Xinrui Huang, Hongyu Zhao, Zhixiang Lin, Can Yang</div>
-          <div class="venue"><em>PNAS</em>, 122(46), e2503952122, 2025</div>
-        </li>
-        <li class="paper">
-          <a class="title" href="https://doi.org/10.1002/smtd.202400975">UCS: A Unified Approach to Cell Segmentation for Subcellular Spatial Transcriptomics</a>
-          <div><b>Yuheng Chen</b>, Xin Xu, Xiaomeng Wan, Jiashun Xiao, Can Yang</div>
-          <div class="venue"><em>Small Methods</em>, 9(5), 2400975, 2025</div>
-          <div class="refs"><a href="https://doi.org/10.1002/smtd.202400975">paper</a> / <a href="https://github.com/chenyhvvvv/ucs">code</a></div>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-5.5-2.5M14.5 21v-3.2c0-1 .1-1.5-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.2 0C6.1 3.1 5.1 3.4 5.1 3.4a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 3.7 9.8c0 4.6 2.7 5.7 5.5 6-.6.5-.6 1.1-.5 2V21"/></svg>
+          <a href="https://github.com/chenyhvvvv">GitHub</a>
         </li>
       </ul>
-      <p class="note">* Equal contribution</p>
-    </section>
+    </aside>
 
-    <section>
+    <main class="content">
+      <h2>About me</h2>
+      <p>
+        I am a PhD student in Data Science in the Department of Mathematics at
+        <a href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a>,
+        advised by <a href="https://www.math.hkust.edu.hk/~macyang/">Prof. Can Yang</a>.
+        I received my BSc in Statistics from Sun Yat-sen University in 2023.
+      </p>
+      <p>
+        My research focuses on statistical and machine-learning methods for
+        spatial transcriptomics. A full list of my papers is on the
+        <a href="publications.html">Publications</a> page.
+      </p>
+
+      <h2>Research interests</h2>
+      <ul class="plain">
+        <li>Spatial transcriptomics and spatial omics</li>
+        <li>Cell segmentation and cell-type annotation</li>
+        <li>Probabilistic modeling and optimal transport</li>
+        <li>LLM agents for scientific data analysis</li>
+      </ul>
+
       <h2>Education</h2>
       <dl class="cv">
         <dt>2023 – present</dt>
@@ -128,12 +90,11 @@
         <dt>2019 – 2023</dt>
         <dd><b>BSc in Statistics</b>, Sun Yat-sen University</dd>
       </dl>
-    </section>
+    </main>
+  </div>
 
-    <footer>
-      Last updated October 2026. Layout adapted from
-      <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's template</a>.
-    </footer>
-  </main>
+  <footer>
+    <div class="container">© 2026 Yuheng Chen · Last updated November 2026</div>
+  </footer>
 </body>
 </html>
